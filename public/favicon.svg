@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Monogram">
+  <rect width="32" height="32" rx="8" fill="#0E1018" />
+  <path
+    d="M9 22.5 L16 8.5 L23 22.5"
+    fill="none"
+    stroke="#F0B24A"
+    stroke-width="2.6"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <line x1="12.2" y1="17.5" x2="19.8" y2="17.5" stroke="#F0B24A" stroke-width="2.6" stroke-linecap="round" />
+</svg>
