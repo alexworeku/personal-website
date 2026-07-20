@@ -13,7 +13,10 @@ export default function Hero({ profile }) {
           </p>
         )}
 
-        <h1 className={styles.title}>{profile.statement}</h1>
+        <h1 className={styles.title}>
+          <strong className={styles.titleLead}>{profile.statementLead}</strong>{' '}
+          {profile.statementRest}
+        </h1>
 
         <p className={styles.who}>
           {profile.name}, {profile.role}
