@@ -2,169 +2,266 @@
   "profile": {
     "name": "Alex Ababu",
     "initials": "A",
-    "role": "Software Engineer",
-    "statement": "I build software that people actually use.",
-    "intro": "Full-stack engineer focused on turning messy, real-world problems into fast, dependable products. I like the whole arc — from the first sketch to the thing shipping in production.",
+    "role": "AI Engineer",
+    "statement": "I build AI that's useful, not just impressive: end-to-end systems, evaluated honestly, secured properly, and as simple as the problem allows.",
     "location": "Tempe, Arizona",
-    "availability": "Open to Summer 2026 internships & new-grad roles",
+    "availability": "Open to new opportunities",
     "available": true,
     "email": "aababu@asu.edu",
     "resumeUrl": "/resume.pdf",
     "socials": [
-      { "label": "GitHub", "handle": "@alexababu", "url": "https://github.com/" },
-      { "label": "LinkedIn", "handle": "in/alexababu", "url": "https://linkedin.com/" },
-      { "label": "Email", "handle": "aababu@asu.edu", "url": "mailto:aababu@asu.edu" }
+      {
+        "label": "Email",
+        "handle": "aababu@asu.edu",
+        "url": "mailto:aababu@asu.edu"
+      },
+      {
+        "label": "LinkedIn",
+        "handle": "in/alex-ababu",
+        "url": "https://linkedin.com/in/alex-ababu"
+      },
+      {
+        "label": "GitHub",
+        "handle": "@alexworeku",
+        "url": "https://github.com/alexworeku"
+      }
     ]
   },
 
   "about": {
-    "heading": "Engineer first, translator always.",
+    "heading": "AI Engineer, grounded in software engineering.",
     "body": [
-      "I'm a computer science student at Arizona State University who spends most of my free time shipping side projects. My favorite problems live at the seam between a clean system and a real person trying to get something done.",
-      "Whether I'm designing a data pipeline or a checkout flow, I try to keep two audiences in mind: the engineer who'll maintain it next year, and the person who just needs it to work today."
-    ],
-    "highlights": [
-      { "value": "5+", "label": "Production projects shipped" },
-      { "value": "12k", "label": "Users served across builds" },
-      { "value": "3.9", "label": "GPA · Computer Science" }
+      "My background is software engineering, mostly in fintech. At Huawei and Arifpay Financial Technologies, I built and redesigned payment infrastructure used by 20+ financial institutions, worked as a solutions architect on a large-scale mobile money platform, and took on freelance projects along the way.",
+      "Now I build AI-powered software: business process automation and agentic AI solutions that start from a business or customer need and end with something that makes the process faster, cheaper, and better. I recently finished a Master's in AI in Business at ASU, and that's mostly where the projects below come from."
     ]
   },
 
   "stack": [
     {
+      "group": "AI & Agentic Systems",
+      "items": ["LLM APIs & Prompt Engineering", "RAG & Semantic Search", "Agentic AI (CrewAI, MCP)", "Model Evaluation"]
+    },
+    {
+      "group": "System Design & Architecture",
+      "items": ["Event-Driven & Serverless Architecture", "REST API Design", "Distributed Data Pipelines (Spark)", "Security & PII Protection"]
+    },
+    {
+      "group": "Cloud & Data",
+      "items": ["AWS (Lambda, API Gateway, Bedrock)", "Redshift & Data Warehousing", "PostgreSQL & Vector DBs", "Docker & CI/CD"]
+    },
+    {
       "group": "Languages",
-      "items": ["TypeScript", "Python", "Go", "SQL", "Java"]
-    },
-    {
-      "group": "Frontend",
-      "items": ["React", "Next.js", "Vite", "CSS / Tailwind", "Framer Motion"]
-    },
-    {
-      "group": "Backend & Data",
-      "items": ["Node.js", "PostgreSQL", "Redis", "gRPC", "Prisma"]
-    },
-    {
-      "group": "Infra & Tooling",
-      "items": ["Docker", "AWS", "GitHub Actions", "Terraform", "Playwright"]
+      "items": ["Python", "Java", "TypeScript", "SQL"]
     }
   ],
 
   "experience": [
     {
-      "role": "Software Engineering Intern",
-      "org": "Northlight Labs",
-      "period": "Summer 2025",
-      "current": false,
-      "summary": "Built internal analytics tooling that cut a manual reporting process from two days to under an hour. Shipped three services to production and owned the on-call rotation for one of them."
-    },
-    {
-      "role": "Undergraduate Research Assistant",
-      "org": "ASU Systems Lab",
-      "period": "2024 — Present",
+      "role": "AI Acceleration Analyst",
+      "org": "Arizona State University",
+      "period": "Aug 2025 - Present",
       "current": true,
-      "summary": "Research on scheduling for distributed training jobs. Wrote the simulation harness the team now uses to benchmark new policies before touching real hardware."
+      "summary": "Build AI-powered tools for the university: a Slack assistant on AWS (Lambda, API Gateway, SQS, DynamoDB) for student/faculty support, and a multimodal LLM-as-a-judge evaluation platform for grading videos, PDFs, and presentations against rubrics. Also write SQL in Redshift for leadership reporting."
     },
     {
-      "role": "Founding Engineer",
-      "org": "Sunfold (student startup)",
-      "period": "2023 — 2024",
+      "role": "Software Engineer",
+      "org": "Freelance",
+      "period": "Jan 2024 - Aug 2025",
       "current": false,
-      "summary": "First engineer on a two-person team. Took a campus-marketplace idea from a Figma file to 1,200 active students in a semester."
+      "summary": "Built a license-plate recognition module for an automated gate system using OpenCV and a CNN-based OCR model, and a real estate listing app in Flutter with GraphQL and Firebase, both delivered end-to-end against client specs."
+    },
+    {
+      "role": "Solutions Architect",
+      "org": "Huawei (LonAdd Consultancy)",
+      "period": "Feb 2023 - Jan 2024",
+      "current": false,
+      "summary": "Translated business requirements into user stories, API specs, and UI prototypes for a large-scale mobile money platform, and coordinated UAT and release readiness with engineering and banking partners."
+    },
+    {
+      "role": "Software Developer",
+      "org": "Arifpay Financial Technologies",
+      "period": "Dec 2021 - Feb 2023",
+      "current": false,
+      "summary": "Redesigned a legacy Java payment gateway architecture, cutting code complexity ~90% and authorization time from 60s to 2s. Built Spring Boot APIs used by 20+ financial institutions and led a team of five engineers."
+    }
+  ],
+
+  "education": [
+    {
+      "degree": "M.S. Artificial Intelligence in Business",
+      "org": "Arizona State University, Tempe, AZ",
+      "period": "May 2026",
+      "detail": "GPA 4.0. Coursework: AWS, NLP, Computer Vision, Machine Learning, AI Agents."
+    },
+    {
+      "degree": "B.S. Computer Science",
+      "org": "Unity University",
+      "period": "Nov 2021",
+      "detail": "GPA 3.82. Coursework: Data Structures & Algorithms, OOP, Database Management."
     }
   ],
 
   "projects": [
     {
-      "id": "atlas",
-      "title": "Atlas",
-      "year": "2025",
-      "role": "Solo — design & full-stack",
-      "status": "Live",
-      "featured": true,
-      "summary": "A course-planning platform that helps ASU students map four years of degree requirements in an afternoon instead of a semester.",
-      "description": "Atlas ingests the university catalog, models prerequisite chains as a directed graph, and lets students drag courses across semesters while it validates their plan in real time. The hard part wasn't the UI — it was reconciling a decade of inconsistent catalog data into something a solver could trust.",
-      "highlights": [
-        "Constraint solver validates 4-year plans against prereqs and credit caps in under 50ms",
-        "Parsed 8,000+ catalog entries into a clean prerequisite graph",
-        "Grew to 4,300 students through word of mouth, zero marketing spend"
+      "id": "pii-shield",
+      "title": "PII Shield",
+      "year": "2026",
+      "role": "Solo, browser extension",
+      "status": "Side project",
+      "summary": "A Chrome extension that masks personal info (emails, SSNs, phone numbers) before it reaches ChatGPT, Claude, or Gemini, then unmasks the reply so you still see your real data. Everything runs locally; nothing leaves the browser.",
+      "media": [
+        {
+          "type": "video",
+          "src": "/media/pii-shield.mp4",
+          "poster": "/media/pii-shield-poster.png",
+          "label": "Demo"
+        },
+        {
+          "type": "image",
+          "src": "/media/pii-shield-poster.png",
+          "label": "Architecture"
+        }
       ],
-      "metrics": [
-        { "value": "4.3k", "label": "Active students" },
-        { "value": "50ms", "label": "Plan validation" },
-        { "value": "99.9%", "label": "Uptime" }
-      ],
-      "tags": ["React", "TypeScript", "PostgreSQL", "Node.js", "Graph algorithms"],
+      "tags": ["JavaScript", "Chrome Extension", "Privacy"],
       "links": [
-        { "label": "Live site", "url": "https://example.com" },
-        { "label": "Source", "url": "https://github.com/" }
+        {
+          "label": "GitHub",
+          "url": "https://github.com/alexworeku/PII-filter-LLM-chrome-extension"
+        }
       ]
     },
     {
-      "id": "signal",
-      "title": "Signal",
-      "year": "2024",
-      "role": "ML & backend",
-      "status": "Open source",
-      "featured": false,
-      "summary": "A tiny, self-hostable service that flags anomalies in time-series metrics before they page a human at 3am.",
-      "description": "Signal watches metric streams and learns each series' normal rhythm, then surfaces the handful of blips worth waking someone up for. It ships as a single Go binary with no external dependencies, so a small team can run it without standing up a whole observability stack.",
-      "highlights": [
-        "Online detection with a rolling seasonal-decomposition model",
-        "Single 12MB binary — no database, no message queue required",
-        "Cut false-positive alerts by ~70% in a pilot deployment"
+      "id": "ecin",
+      "title": "ECIN",
+      "year": "2026",
+      "role": "Solo, data platform",
+      "status": "Coursework",
+      "summary": "A credit-scoring platform built on a bronze/silver/gold data pipeline: raw transactions get normalized, turned into features, and served through both a batch training path and a real-time FastAPI scoring endpoint.",
+      "media": [
+        {
+          "type": "video",
+          "src": "/media/ecin.mp4",
+          "poster": "/media/ecin-poster.png",
+          "label": "Demo"
+        },
+        {
+          "type": "image",
+          "src": "/media/ecin-poster.png",
+          "label": "Architecture"
+        }
       ],
-      "metrics": [
-        { "value": "12MB", "label": "Single binary" },
-        { "value": "−70%", "label": "False alerts" },
-        { "value": "600★", "label": "GitHub stars" }
-      ],
-      "tags": ["Go", "Time-series", "Statistics", "Docker"],
-      "links": [{ "label": "Source", "url": "https://github.com/" }]
-    },
-    {
-      "id": "tempo",
-      "title": "Tempo",
-      "year": "2024",
-      "role": "Full-stack · hackathon",
-      "status": "Prototype",
-      "featured": false,
-      "summary": "A shared, real-time queue that keeps a room's music democratic — built in 36 hours and won Best UX.",
-      "description": "Everyone in the room adds songs from their phone; Tempo weighs votes and recency so no single person hijacks the speaker. Real-time sync runs over WebSockets with an optimistic UI, so the queue feels instant even on conference wifi.",
-      "highlights": [
-        "Real-time queue sync across dozens of devices over WebSockets",
-        "Optimistic UI keeps interactions instant on flaky networks",
-        "Won Best UX out of 60 teams at SunHacks"
-      ],
-      "metrics": [
-        { "value": "36h", "label": "Build time" },
-        { "value": "60", "label": "Teams beaten" }
-      ],
-      "tags": ["React", "WebSockets", "Node.js", "Spotify API"],
+      "tags": ["Python", "FastAPI", "ML", "Data Engineering"],
       "links": [
-        { "label": "Demo", "url": "https://example.com" },
-        { "label": "Source", "url": "https://github.com/" }
+        {
+          "label": "GitHub",
+          "url": "https://github.com/alexworeku/credit_agg_scoring_platform"
+        }
       ]
     },
     {
-      "id": "forge",
-      "title": "Forge",
-      "year": "2023",
-      "role": "Solo — developer tooling",
-      "status": "Open source",
-      "featured": false,
-      "summary": "A CLI that scaffolds a fully-wired backend service — routes, tests, CI, and Docker — from a single config file.",
-      "description": "Forge grew out of my own frustration re-doing the same boilerplate for every side project. Point it at a short YAML spec and it generates a runnable service with linting, tests, and a deploy pipeline already green. It's the tool I now start every project with.",
-      "highlights": [
-        "Generates a production-ready service from one YAML file",
-        "Pluggable templates so teams can encode their own conventions",
-        "Trimmed new-service setup from a day to about two minutes"
+      "id": "asu-faceid",
+      "title": "ASU FaceID",
+      "year": "2026",
+      "role": "Course project, CIS 515",
+      "status": "Coursework",
+      "summary": "A face-recognition access control system for room entry: a FastAPI backend running ArcFace embeddings, paired with a Next.js admin frontend to enroll faces and review verification logs.",
+      "media": [
+        {
+          "type": "video",
+          "src": "/media/asu-faceid.mp4",
+          "poster": "/media/asu-faceid-poster.png",
+          "label": "Demo"
+        },
+        {
+          "type": "image",
+          "src": "/media/asu-faceid-poster.png",
+          "label": "Architecture"
+        }
       ],
-      "metrics": [
-        { "value": "~2min", "label": "To first deploy" },
-        { "value": "1.2k", "label": "npm installs / mo" }
+      "tags": ["Python", "FastAPI", "Next.js", "TypeScript"],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/alexworeku/cis-515-face-id-asu"
+        }
+      ]
+    },
+    {
+      "id": "ai-slack-connector",
+      "title": "AI Slack Connector",
+      "year": "2026",
+      "role": "ASU, AI Acceleration Analyst",
+      "status": "Work project",
+      "summary": "A serverless Slack bot that answers questions in-channel using an LLM. Built on AWS SAM: API Gateway and Lambda receive events, SQS queues them, and DynamoDB tracks per-project config so one deployment can serve multiple workspaces.",
+      "media": [
+        {
+          "type": "video",
+          "src": "/media/ai-slack-connector.mp4",
+          "poster": "/media/ai-slack-connector-poster.png",
+          "label": "Demo"
+        },
+        {
+          "type": "image",
+          "src": "/media/ai-slack-connector-poster.png",
+          "label": "Architecture"
+        }
       ],
-      "tags": ["Go", "CLI", "Code generation", "GitHub Actions"],
-      "links": [{ "label": "Source", "url": "https://github.com/" }]
+      "tags": ["Python", "AWS Lambda", "Slack API"],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/alexworeku/serverless-ai-slack-bot"
+        }
+      ]
+    },
+    {
+      "id": "llm-conversation-semantic-search",
+      "title": "LLM Conversation Semantic Search",
+      "year": "2026",
+      "role": "Solo, data/ML",
+      "status": "Side project",
+      "summary": "A Streamlit proof of concept that anonymizes chat logs with Presidio, embeds them into ChromaDB, and lets you semantically search across a whole conversation history. An exploration of what's possible once chat data becomes searchable.",
+      "media": [
+        {
+          "type": "link",
+          "url": "https://llm-conversation-semantic-search-demo-kneqrjjzbncfmdjtzffw5l.streamlit.app/",
+          "label": "Live Demo"
+        },
+        {
+          "type": "image",
+          "src": "/media/semantic-search-poster.png",
+          "label": "Architecture"
+        }
+      ],
+      "tags": ["Python", "Streamlit", "ChromaDB", "NLP"],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/alexworeku/llm-conversation-semantic-search-demo"
+        }
+      ]
+    },
+    {
+      "id": "8-week-sql-challenge",
+      "title": "8-Week SQL Challenge",
+      "year": "2026",
+      "role": "Solo, SQL case studies",
+      "status": "Practice",
+      "summary": "My solutions to Danny Ma's #8WeekSQLChallenge: real-world case studies in food tech, finance, and marketing, each with its own schema and query set. Mostly here to keep my SQL sharp.",
+      "media": [
+        {
+          "type": "image",
+          "src": "/media/8week-sql-poster.png",
+          "label": "Screenshot"
+        }
+      ],
+      "tags": ["SQL", "PostgreSQL"],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/alexworeku/8-week-SQL-challenge-postgres"
+        }
+      ]
     }
   ]
 }

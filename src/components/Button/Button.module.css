@@ -9,23 +9,13 @@
   border-radius: var(--r-pill);
   border: 1px solid transparent;
   transition:
-    transform 0.2s var(--ease),
     background 0.2s var(--ease),
-    border-color 0.2s var(--ease),
-    box-shadow 0.2s var(--ease);
-}
-
-.btn:hover {
-  transform: translateY(-2px);
-}
-.btn:active {
-  transform: translateY(0);
+    border-color 0.2s var(--ease);
 }
 
 .primary {
   background: var(--accent);
   color: var(--on-accent);
-  box-shadow: 0 12px 26px -14px var(--accent);
 }
 .primary:hover {
   background: var(--accent-bright);

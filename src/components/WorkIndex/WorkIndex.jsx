@@ -3,7 +3,7 @@ import ProjectCard from '../ProjectCard/ProjectCard.jsx'
 import Reveal from '../Reveal/Reveal.jsx'
 import styles from './WorkIndex.module.css'
 
-export default function WorkIndex({ projects, onOpen }) {
+export default function WorkIndex({ projects }) {
   const count = String(projects.length).padStart(2, '0')
 
   return (
@@ -12,18 +12,14 @@ export default function WorkIndex({ projects, onOpen }) {
         <SectionHeader
           index="01"
           meta={`${count} projects`}
-          title="Selected work"
-          lead="A few things I've designed and shipped end to end. Open any project for the full story — the problem, the build, and what came of it."
+          title="Things I've built"
+          lead="A few side projects I've made to learn something new. Most started as 'can I build this?' and ended up on GitHub."
         />
 
         <div className={styles.grid}>
           {projects.map((project, i) => (
-            <Reveal
-              key={project.id}
-              delay={(i % 2) * 80}
-              className={project.featured ? styles.featuredItem : ''}
-            >
-              <ProjectCard project={project} index={i} onOpen={onOpen} />
+            <Reveal key={project.id} delay={(i % 2) * 80}>
+              <ProjectCard project={project} index={i} />
             </Reveal>
           ))}
         </div>

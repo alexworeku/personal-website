@@ -1,7 +1,7 @@
 # Personal Portfolio
 
-A fast, JSON-driven portfolio built with **Vite + React**. Every word, project,
-and stat on the page comes from a single data file — **`src/data/projects.json`**.
+A fast, JSON-driven portfolio built with **Vite + React**. Every word and
+project on the page comes from a single data file — **`src/data/projects.json`**.
 Add a project by appending one block to that file; a push to `main` rebuilds and
 redeploys automatically.
 
@@ -12,7 +12,7 @@ src/
 ├─ styles/global.css      ← design tokens + reset (dark / light themes)
 ├─ hooks/useTheme.js
 └─ components/            ← pure, presentational; data comes in as props
-   ├─ Nav, Hero, WorkIndex, ProjectCard, ProjectModal
+   ├─ Nav, Hero, WorkIndex, ProjectCard
    ├─ About, Stack, Experience, Contact, Footer
    └─ SectionHeader, Button, Reveal, ThemeToggle
 ```
@@ -39,37 +39,58 @@ Open **`src/data/projects.json`**. It has five top-level keys:
 | Key          | What it controls                                             |
 | ------------ | ----------------------------------------------------------- |
 | `profile`    | Name, role, hero statement, availability, email, socials.   |
-| `about`      | Bio heading, paragraphs, and the "at a glance" stat cards.   |
+| `about`      | Bio heading and paragraphs.                                  |
 | `stack`      | Grouped lists of tools shown in the Stack section.          |
 | `experience` | Timeline entries (set `"current": true` for the live dot).  |
 | `projects`   | The array the work grid maps over. **Append here.**         |
 
 ### Adding a project
 
-Append a block to the `projects` array. Only `id`, `title`, and `summary` are
-required; everything else is optional and hidden when omitted.
+Append a block to the `projects` array — that's the whole update flow.
 
 ```jsonc
 {
   "id": "my-project",              // unique slug
   "title": "My Project",
   "year": "2026",
-  "role": "Solo — full-stack",
-  "status": "Live",                // shown as a pill
-  "featured": true,                // spans full width + shows metrics on the card
-  "summary": "One line a non-technical recruiter understands instantly.",
-  "description": "The longer story shown in the details dialog.",
-  "highlights": ["Outcome one", "Outcome two"],
-  "metrics": [{ "value": "4.3k", "label": "Users" }],
+  "role": "Solo — full-stack",     // or "Team of 3 — hackathon", etc.
+  "status": "Side project",        // shown as a pill (Open source, Hackathon…)
+  "summary": "A sentence or two on what it is and why you built it.",
+  "media": {                       // image or video preview (see below)
+    "type": "image",               // optional — inferred from the file extension
+    "src": "/media/my-project.png",
+    "alt": "What the screenshot shows"
+  },
   "tags": ["React", "TypeScript", "PostgreSQL"],
   "links": [
-    { "label": "Live site", "url": "https://…" },
-    { "label": "Source", "url": "https://github.com/…" }
+    { "label": "GitHub", "url": "https://github.com/…" },
+    { "label": "Demo", "url": "https://…" }
   ]
 }
 ```
 
-The first `links` entry becomes the primary (filled) button in the dialog.
+Only `id`, `title`, and `summary` are truly required — omit any other field and
+its part of the card just disappears (a project with no links shows no links).
+
+### Project media (image or video)
+
+Each card has a preview area. Drop your file in **`public/media/`** and point
+`media.src` at it (paths are root-relative, e.g. `/media/atlas.png`).
+
+- **Image** — `.png`, `.jpg`, `.svg`, `.webp`, `.gif`. Always add `alt` text.
+- **Video** — `.mp4`, `.webm`, `.mov`. Plays muted + looped like a silent clip
+  (paused automatically for visitors who prefer reduced motion). Add a
+  `"poster": "/media/x.jpg"` still for the first frame.
+- **Shorthand** — if you only have an image, `"media": "/media/x.png"` works too.
+- **No media?** Leave `media` out entirely and the card shows an on-brand
+  placeholder with the project's initial — so the grid still looks complete.
+
+```jsonc
+"media": { "type": "video", "src": "/media/demo.mp4", "poster": "/media/demo.jpg", "alt": "…" }
+```
+
+The four sample previews in `public/media/*.svg` are placeholders — replace them
+with real screenshots or clips of your work.
 
 > The sample projects, experience, and stack are placeholders — replace them
 > with your own. To use your résumé button, drop `resume.pdf` in `public/`

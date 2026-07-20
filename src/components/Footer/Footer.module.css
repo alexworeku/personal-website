@@ -27,14 +27,6 @@
   color: var(--text-faint);
 }
 
-.colophon {
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  color: var(--text-faint);
-  text-align: center;
-  flex: 1 1 auto;
-}
-
 .top {
   display: inline-flex;
   align-items: center;
@@ -47,10 +39,3 @@
   color: var(--accent);
 }
 
-@media (max-width: 620px) {
-  .colophon {
-    order: 3;
-    flex-basis: 100%;
-    text-align: left;
-  }
-}

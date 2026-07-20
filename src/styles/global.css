@@ -1,38 +1,37 @@
 /* ============================================================
-   Tokens — "Index": cool indigo-ink ground, warm honey signal.
-   Dark is the default; [data-theme="light"] swaps the surfaces.
+   Tokens — "Index": warm paper ground, honey signal.
    ============================================================ */
 :root {
   /* surfaces */
-  --bg: #0e1018;
-  --bg-2: #14172380;
-  --surface: #14172a;
-  --surface-2: #1a1e33;
-  --surface-hover: #1f2440;
+  --bg: #f4f4f1;
+  --bg-2: #ffffffcc;
+  --surface: #ffffff;
+  --surface-2: #fbfbf8;
+  --surface-hover: #ffffff;
 
   /* text */
-  --text: #eceef6;
-  --text-muted: #9aa0bd;
-  --text-faint: #6b7192;
+  --text: #1a1c24;
+  --text-muted: #565a6b;
+  --text-faint: #868a9c;
 
   /* lines */
-  --line: rgba(233, 236, 250, 0.09);
-  --line-strong: rgba(233, 236, 250, 0.16);
+  --line: rgba(20, 22, 34, 0.1);
+  --line-strong: rgba(20, 22, 34, 0.18);
 
   /* signal */
-  --accent: #f0b24a;
-  --accent-bright: #f6c064;
-  --accent-soft: rgba(240, 178, 74, 0.14);
-  --accent-line: rgba(240, 178, 74, 0.4);
-  --on-accent: #1a1204;
+  --accent: #b26b12;
+  --accent-bright: #c07a15;
+  --accent-soft: rgba(178, 107, 18, 0.1);
+  --accent-line: rgba(178, 107, 18, 0.35);
+  --on-accent: #fffaf0;
 
   /* status hue (calm green) */
-  --live: #6fd6a3;
-  --live-soft: rgba(111, 214, 163, 0.14);
+  --live: #1f9d63;
+  --live-soft: rgba(31, 157, 99, 0.12);
 
-  --shadow-card: 0 1px 0 rgba(255, 255, 255, 0.03) inset,
-    0 20px 40px -24px rgba(0, 0, 0, 0.7);
-  --shadow-pop: 0 30px 70px -30px rgba(0, 0, 0, 0.75);
+  --shadow-card: 0 1px 0 rgba(255, 255, 255, 0.6) inset,
+    0 22px 44px -28px rgba(30, 35, 60, 0.35);
+  --shadow-pop: 0 34px 80px -34px rgba(30, 35, 60, 0.4);
 
   --r-sm: 9px;
   --r: 14px;
@@ -47,10 +46,9 @@
   --fs-eyebrow: 0.75rem;
   --fs-small: 0.85rem;
   --fs-body: 1.02rem;
-  --fs-lead: clamp(1.1rem, 0.9rem + 1vw, 1.35rem);
-  --fs-h3: clamp(1.25rem, 1.05rem + 1vw, 1.6rem);
-  --fs-h2: clamp(1.9rem, 1.3rem + 2.6vw, 2.9rem);
-  --fs-display: clamp(2.7rem, 1.2rem + 6.6vw, 5.4rem);
+  --fs-lead: clamp(1.05rem, 0.9rem + 0.6vw, 1.2rem);
+  --fs-h3: clamp(1.2rem, 1.05rem + 0.7vw, 1.45rem);
+  --fs-h2: clamp(1.6rem, 1.3rem + 1.6vw, 2.3rem);
 
   --font-display: 'Bricolage Grotesque Variable', 'Bricolage Grotesque',
     system-ui, sans-serif;
@@ -59,34 +57,6 @@
     'SF Mono', Menlo, monospace;
 
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-:root[data-theme='light'] {
-  --bg: #f4f4f1;
-  --bg-2: #ffffffcc;
-  --surface: #ffffff;
-  --surface-2: #fbfbf8;
-  --surface-hover: #ffffff;
-
-  --text: #1a1c24;
-  --text-muted: #565a6b;
-  --text-faint: #868a9c;
-
-  --line: rgba(20, 22, 34, 0.1);
-  --line-strong: rgba(20, 22, 34, 0.18);
-
-  --accent: #b26b12;
-  --accent-bright: #c07a15;
-  --accent-soft: rgba(178, 107, 18, 0.1);
-  --accent-line: rgba(178, 107, 18, 0.35);
-  --on-accent: #fffaf0;
-
-  --live: #1f9d63;
-  --live-soft: rgba(31, 157, 99, 0.12);
-
-  --shadow-card: 0 1px 0 rgba(255, 255, 255, 0.6) inset,
-    0 22px 44px -28px rgba(30, 35, 60, 0.35);
-  --shadow-pop: 0 34px 80px -34px rgba(30, 35, 60, 0.4);
 }
 
 /* ============================================================

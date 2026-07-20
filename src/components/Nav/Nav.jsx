@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react'
-import ThemeToggle from '../ThemeToggle/ThemeToggle.jsx'
 import styles from './Nav.module.css'
 
-export default function Nav({ profile, sections, theme, onToggleTheme }) {
+export default function Nav({ profile, sections }) {
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
@@ -16,7 +15,7 @@ export default function Nav({ profile, sections, theme, onToggleTheme }) {
   return (
     <header className={`${styles.nav} ${scrolled ? styles.scrolled : ''}`}>
       <div className={`container ${styles.inner}`}>
-        <a href="#top" className={styles.brand} aria-label={`${profile.name} — home`}>
+        <a href="#top" className={styles.brand} aria-label={`${profile.name}, home`}>
           <span className={styles.mark} aria-hidden="true">
             {profile.initials || profile.name.charAt(0)}
           </span>
@@ -53,7 +52,6 @@ export default function Nav({ profile, sections, theme, onToggleTheme }) {
               Résumé
             </a>
           )}
-          <ThemeToggle theme={theme} onToggle={onToggleTheme} />
           <button
             type="button"
             className={styles.burger}

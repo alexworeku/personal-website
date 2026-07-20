@@ -11,11 +11,6 @@ export default function Footer({ profile }) {
           <span className={styles.copy}>© {year}</span>
         </div>
 
-        <p className={styles.colophon}>
-          Built with React &amp; Vite · Bricolage Grotesque, Inter &amp;
-          JetBrains Mono
-        </p>
-
         <a href="#top" className={styles.top}>
           Back to top
           <span aria-hidden="true">↑</span>

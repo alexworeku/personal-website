@@ -8,9 +8,9 @@ export default function Stack({ stack }) {
       <div className="container">
         <SectionHeader
           index="03"
-          meta="Toolkit"
-          title="Tools I reach for"
-          lead="The stack I'm most fluent in — though I care more about picking the right tool than defending a favorite."
+          meta="Skills"
+          title="What I bring to the table"
+          lead="System design, cloud infrastructure, and applied AI — the areas I work across, not just a list of tools."
         />
 
         <div className={styles.grid}>

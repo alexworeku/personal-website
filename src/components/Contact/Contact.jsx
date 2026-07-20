@@ -8,14 +8,14 @@ export default function Contact({ profile }) {
       <div className="container">
         <Reveal className={styles.panel}>
           <p className={`eyebrow ${styles.eyebrow}`}>
-            <span className={styles.index}>05</span> Contact
+            <span className={styles.index}>06</span> Contact
           </p>
 
           <h2 className={styles.title}>Let's build something.</h2>
           <p className={styles.lead}>
             {profile.availability
-              ? `${profile.availability}. The fastest way to reach me is email — I read everything and reply within a day.`
-              : 'The fastest way to reach me is email — I read everything and reply within a day.'}
+              ? `${profile.availability}. The fastest way to reach me is email; I read everything and reply within a day.`
+              : 'The fastest way to reach me is email; I read everything and reply within a day.'}
           </p>
 
           <div className={styles.actions}>
