@@ -35,23 +35,9 @@ export default function Nav({ profile, sections }) {
               {section.label}
             </a>
           ))}
-          {profile.resumeUrl && (
-            <a
-              className={styles.resumeMobile}
-              href={profile.resumeUrl}
-              onClick={() => setOpen(false)}
-            >
-              Résumé
-            </a>
-          )}
         </nav>
 
         <div className={styles.actions}>
-          {profile.resumeUrl && (
-            <a className={styles.resume} href={profile.resumeUrl}>
-              Résumé
-            </a>
-          )}
           <button
             type="button"
             className={styles.burger}

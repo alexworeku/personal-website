@@ -10,7 +10,7 @@ export default function Stack({ stack }) {
           index="03"
           meta="Skills"
           title="What I bring to the table"
-          lead="System design, cloud infrastructure, and applied AI — the areas I work across, not just a list of tools."
+          lead="Strong software engineering fundamentals, paired with hands-on experience across system design, cloud infrastructure, and applied AI."
         />
 
         <div className={styles.grid}>
